@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <script>
+      var pos = document.documentElement ;
+      pos.addEventListener('mousemove', e =>{
+        pos.style.setProperty('--x', e.clientX + 'px')
+        pos.style.setProperty('--y', e.clientY + 'px')
+      })
+    </script>
+  </head>
+  <body>
+    <div
+      class="container min-h-screen min-w-full bg-black flex items-center justify-center"
+    >
+      <div>
+        <h3 class="text-white font-semibold text-center text-2xl">saya</h3>
+        <h1 class="text-white text-4xl font-bold lg:text-7xl">nesaaerwinsyah</h1>
+      </div>
+      <div class="light fixed top-0 left-0 min-w-full min-h-screen hidden pointer-events-none md:hidden sm:hidden"></div>
+      
+    </div>
+    <div
+      class="container min-h-screen min-w-full bg-white  flex flex-col justify-center items-center gap-10 md:flex-row "
+    >
+    <a href="https://open.spotify.com/playlist/61E2BgOTg1OvzXQRSJlEoA?si=M3Us2eNrQ2atm8csfGctqw&utm_source=copy-link&dd=1&nd=1" target="_blank">
+      <div class="card bg-white text-gray-100 w-72 min-h-[10rem] rounded-lg overflow-hidden shadow-lg">
+        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="music" />
+        <div class="p-5 flex-col gap-3">
+          
+          <!-- badge -->
+          <div class="column items-center gap-2 px-3 py-1">
+            <span class="badge lg:font- text-2xl text-black ">spotify</span>
+            <h4 class="product-title text-black" title="Best Headphone Ever">listen to my playlist!</h4>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="https://instagram.com/nesaaerwinsyah" target="_blank" class="">
+      <div class="card bg-white text-gray-100 w-72 min-h-[10rem] rounded-lg overflow-hidden shadow-lg">
+        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1585250003309-694ff34512d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdGFncmFtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="music" />
+        <div class="p-5 flex-col gap-3">
+          <!-- badge -->
+          <div class="column items-center gap-2 px-3 py-1 rounded-full">
+            <span class="badge text-2xl text-black ">instagram</span>
+            <h4 class="product-title text-black" title="Best Headphone Ever">follow me on instagram!</h4>
+        </div>
+        </div>
+      </div>
+    </a>
+  </body>
+</html>
